@@ -429,8 +429,9 @@ class Text extends Drawable {
      * @param {string} color - The text color.
      * @param {string} text - The text content.
      * @param {string} [font="20px monospace"] - The font style.
+     * @param {boolean} [doCenter=false] - Whether to center the text horizontally.
      */
-    constructor(x, y, color, text, font = "20px monospace") {
+    constructor(x, y, color, text, font = "20px monospace", doCenter = false) {
         super(x, y);
         /** @type {string} Text color */
         this.color = color;
@@ -438,6 +439,8 @@ class Text extends Drawable {
         this.text = text;
         /** @type {string} Font style */
         this.font = font;
+        /** @type {boolean} Whether to center the text horizontally */
+        this.doCenter = doCenter;
     }
 
     /**
@@ -447,24 +450,13 @@ class Text extends Drawable {
         if (this.hidden) return;
         ctx.fillStyle = this.color;
         ctx.font = this.font;
-        ctx.fillText(this.text, this.x, this.y);
+        let x = this.x;
+        if (this.doCenter) {
+            const textWidth = ctx.measureText(this.text).width;
+            x = (canvaX - textWidth) / 2; // Center horizontally based on canvas width
+        }
+        ctx.fillText(this.text, x, this.y);
     }
-}
-
-/**
- * Creates a new sprite and adds it to drawables.
- * @param {number} [x=0] - The starting x-coordinate.
- * @param {number} [y=0] - The starting y-coordinate.
- * @param {string} [color='white'] - The sprite color.
- * @param {...string} imageSrcs - Optional image sources for costumes.
- * @returns {Sprite} The created sprite.
- */
-function createSprite(x = 0, y = 0, color = 'white', ...imageSrcs) {
-    const sprite = new Sprite(x, y, color, ...imageSrcs);
-    sprite.prevX = x;
-    sprite.prevY = y;
-    drawables.push(sprite);
-    return sprite;
 }
 
 /**
@@ -474,10 +466,11 @@ function createSprite(x = 0, y = 0, color = 'white', ...imageSrcs) {
  * @param {string} color - The text color.
  * @param {string} text - The text content.
  * @param {string} [font="20px monospace"] - The font style.
+ * @param {boolean} [doCenter=false] - Whether to center the text horizontally.
  * @returns {Text} The created text object.
  */
-function createText(x, y, color, text, font = "20px monospace") {
-    const textObj = new Text(x, y, color, text, font);
+function createText(x, y, color, text, font = "20px monospace", doCenter = false) {
+    const textObj = new Text(x, y, color, text, font, doCenter);
     drawables.push(textObj);
     return textObj;
 }
@@ -868,13 +861,13 @@ setTimeout(() => {
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Drawable.html">Drawable</a></li><li><a href="Sprite.html">Sprite</a></li><li><a href="Text.html">Text</a></li></ul><h3>Global</h3><ul><li><a href="global.html#autoGenerateHitbox">autoGenerateHitbox</a></li><li><a href="global.html#backgroundImg">backgroundImg</a></li><li><a href="global.html#canvaX">canvaX</a></li><li><a href="global.html#canvaY">canvaY</a></li><li><a href="global.html#canvasEl">canvasEl</a></li><li><a href="global.html#convexHull">convexHull</a></li><li><a href="global.html#createSprite">createSprite</a></li><li><a href="global.html#createText">createText</a></li><li><a href="global.html#cross">cross</a></li><li><a href="global.html#ctx">ctx</a></li><li><a href="global.html#cursor">cursor</a></li><li><a href="global.html#debug">debug</a></li><li><a href="global.html#drawables">drawables</a></li><li><a href="global.html#gameLoop">gameLoop</a></li><li><a href="global.html#generateHitboxFromImage">generateHitboxFromImage</a></li><li><a href="global.html#hide">hide</a></li><li><a href="global.html#hoverInfoEl">hoverInfoEl</a></li><li><a href="global.html#keys">keys</a></li><li><a href="global.html#mousePosEl">mousePosEl</a></li><li><a href="global.html#polygonsIntersect">polygonsIntersect</a></li><li><a href="global.html#prevKeys">prevKeys</a></li><li><a href="global.html#setBackground">setBackground</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Drawable.html">Drawable</a></li><li><a href="Sprite.html">Sprite</a></li><li><a href="Text.html">Text</a></li></ul><h3>Global</h3><ul><li><a href="global.html#autoGenerateHitbox">autoGenerateHitbox</a></li><li><a href="global.html#backgroundImg">backgroundImg</a></li><li><a href="global.html#canvaX">canvaX</a></li><li><a href="global.html#canvaY">canvaY</a></li><li><a href="global.html#canvasEl">canvasEl</a></li><li><a href="global.html#convexHull">convexHull</a></li><li><a href="global.html#createText">createText</a></li><li><a href="global.html#cross">cross</a></li><li><a href="global.html#ctx">ctx</a></li><li><a href="global.html#cursor">cursor</a></li><li><a href="global.html#debug">debug</a></li><li><a href="global.html#drawables">drawables</a></li><li><a href="global.html#gameLoop">gameLoop</a></li><li><a href="global.html#generateHitboxFromImage">generateHitboxFromImage</a></li><li><a href="global.html#hide">hide</a></li><li><a href="global.html#hoverInfoEl">hoverInfoEl</a></li><li><a href="global.html#keys">keys</a></li><li><a href="global.html#mousePosEl">mousePosEl</a></li><li><a href="global.html#polygonsIntersect">polygonsIntersect</a></li><li><a href="global.html#prevKeys">prevKeys</a></li><li><a href="global.html#setBackground">setBackground</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Sat Apr 12 2025 03:13:53 GMT+0000 (Coordinated Universal Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Sat Apr 12 2025 03:28:49 GMT+0000 (Coordinated Universal Time)
 </footer>
 
 <script> prettyPrint(); </script>

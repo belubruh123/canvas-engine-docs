@@ -28,7 +28,7 @@
 
 <header>
     
-        <h2><span class="attribs"><span class="type-signature"></span></span>Text<span class="signature">(x, y, color, text, font<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h2>
+        <h2><span class="attribs"><span class="type-signature"></span></span>Text<span class="signature">(x, y, color, text, font<span class="signature-attributes">opt</span>, doCenter<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h2>
         
             <div class="class-description"><p>Creates text objects to display on the canvas.</p></div>
         
@@ -45,7 +45,7 @@
     
 
     
-    <h4 class="name" id="Text"><span class="type-signature"></span>new Text<span class="signature">(x, y, color, text, font<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="Text"><span class="type-signature"></span>new Text<span class="signature">(x, y, color, text, font<span class="signature-attributes">opt</span>, doCenter<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
     
 
     
@@ -271,6 +271,45 @@
         </tr>
 
     
+
+        <tr>
+            
+                <td class="name"><code>doCenter</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    false
+                
+                </td>
+            
+
+            <td class="description last"><p>Whether to center the text horizontally.</p></td>
+        </tr>
+
+    
     </tbody>
 </table>
 
@@ -425,7 +464,81 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="library.js.html">library.js</a>, <a href="library.js.html#line408">line 408</a>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line409">line 409</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="doCenter"><span class="type-signature"></span>doCenter<span class="type-signature"> :boolean</span></h4>
+
+
+<p class="summary"><p>Whether to center the text horizontally</p>.</p>
+
+
+
+<div class="description">
+    <p>Whether to center the text horizontally</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">boolean</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line415">line 415</a>
     </li></ul></dd>
     
 
@@ -499,7 +612,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="library.js.html">library.js</a>, <a href="library.js.html#line412">line 412</a>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line413">line 413</a>
     </li></ul></dd>
     
 
@@ -652,7 +765,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="library.js.html">library.js</a>, <a href="library.js.html#line410">line 410</a>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line411">line 411</a>
     </li></ul></dd>
     
 
@@ -897,7 +1010,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="library.js.html">library.js</a>, <a href="library.js.html#line418">line 418</a>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line421">line 421</a>
     </li></ul></dd>
     
 
@@ -943,13 +1056,13 @@
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Drawable.html">Drawable</a></li><li><a href="Sprite.html">Sprite</a></li><li><a href="Text.html">Text</a></li></ul><h3>Global</h3><ul><li><a href="global.html#autoGenerateHitbox">autoGenerateHitbox</a></li><li><a href="global.html#backgroundImg">backgroundImg</a></li><li><a href="global.html#canvaX">canvaX</a></li><li><a href="global.html#canvaY">canvaY</a></li><li><a href="global.html#canvasEl">canvasEl</a></li><li><a href="global.html#convexHull">convexHull</a></li><li><a href="global.html#createSprite">createSprite</a></li><li><a href="global.html#createText">createText</a></li><li><a href="global.html#cross">cross</a></li><li><a href="global.html#ctx">ctx</a></li><li><a href="global.html#cursor">cursor</a></li><li><a href="global.html#debug">debug</a></li><li><a href="global.html#drawables">drawables</a></li><li><a href="global.html#gameLoop">gameLoop</a></li><li><a href="global.html#generateHitboxFromImage">generateHitboxFromImage</a></li><li><a href="global.html#hide">hide</a></li><li><a href="global.html#hoverInfoEl">hoverInfoEl</a></li><li><a href="global.html#keys">keys</a></li><li><a href="global.html#mousePosEl">mousePosEl</a></li><li><a href="global.html#polygonsIntersect">polygonsIntersect</a></li><li><a href="global.html#prevKeys">prevKeys</a></li><li><a href="global.html#setBackground">setBackground</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Drawable.html">Drawable</a></li><li><a href="Sprite.html">Sprite</a></li><li><a href="Text.html">Text</a></li></ul><h3>Global</h3><ul><li><a href="global.html#autoGenerateHitbox">autoGenerateHitbox</a></li><li><a href="global.html#backgroundImg">backgroundImg</a></li><li><a href="global.html#canvaX">canvaX</a></li><li><a href="global.html#canvaY">canvaY</a></li><li><a href="global.html#canvasEl">canvasEl</a></li><li><a href="global.html#convexHull">convexHull</a></li><li><a href="global.html#createText">createText</a></li><li><a href="global.html#cross">cross</a></li><li><a href="global.html#ctx">ctx</a></li><li><a href="global.html#cursor">cursor</a></li><li><a href="global.html#debug">debug</a></li><li><a href="global.html#drawables">drawables</a></li><li><a href="global.html#gameLoop">gameLoop</a></li><li><a href="global.html#generateHitboxFromImage">generateHitboxFromImage</a></li><li><a href="global.html#hide">hide</a></li><li><a href="global.html#hoverInfoEl">hoverInfoEl</a></li><li><a href="global.html#keys">keys</a></li><li><a href="global.html#mousePosEl">mousePosEl</a></li><li><a href="global.html#polygonsIntersect">polygonsIntersect</a></li><li><a href="global.html#prevKeys">prevKeys</a></li><li><a href="global.html#setBackground">setBackground</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Sat Apr 12 2025 03:13:53 GMT+0000 (Coordinated Universal Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Sat Apr 12 2025 03:28:49 GMT+0000 (Coordinated Universal Time)
 </footer>
 
 <script> prettyPrint(); </script>
