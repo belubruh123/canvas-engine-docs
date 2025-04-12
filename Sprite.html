@@ -30,7 +30,7 @@
     
         <h2><span class="attribs"><span class="type-signature"></span></span>Sprite<span class="signature">(x<span class="signature-attributes">opt</span>, y<span class="signature-attributes">opt</span>, color<span class="signature-attributes">opt</span>, &hellip;imageSrcs)</span><span class="type-signature"></span></h2>
         
-            <div class="class-description"><p>Sprite This controls everything related to object on canva that moves.</p></div>
+            <div class="class-description"><p>Controls everything related to objects on canvas that move.</p></div>
         
     
 </header>
@@ -49,14 +49,13 @@
     
 
     
-    <p class="summary">Creates an instance of Sprite.</p>
+    <p class="summary">Creates a sprite.</p>
     
 
 
 
 <div class="description">
-    <p>Creates an instance of Sprite.
-Note: We recommand you to use the global function @see <a href="global.html#createSprite">createSprite</a> for further information.</p>
+    <p>Creates a sprite. Use <a href="global.html#createSprite">createSprite</a> for instantiation.</p>
 </div>
 
 
@@ -128,7 +127,7 @@ Note: We recommand you to use the global function @see <a href="global.html#crea
                 </td>
             
 
-            <td class="description last"><p>The x for the sprite you want to be at start.</p></td>
+            <td class="description last"><p>The starting x-coordinate.</p></td>
         </tr>
 
     
@@ -167,7 +166,7 @@ Note: We recommand you to use the global function @see <a href="global.html#crea
                 </td>
             
 
-            <td class="description last"><p>The y for the sprite you want to be at start.</p></td>
+            <td class="description last"><p>The starting y-coordinate.</p></td>
         </tr>
 
     
@@ -206,7 +205,7 @@ Note: We recommand you to use the global function @see <a href="global.html#crea
                 </td>
             
 
-            <td class="description last"><p>The color for the sprite you want to be at start.</p></td>
+            <td class="description last"><p>The sprite's color.</p></td>
         </tr>
 
     
@@ -219,7 +218,7 @@ Note: We recommand you to use the global function @see <a href="global.html#crea
             <td class="type">
             
                 
-<span class="param-type">*</span>
+<span class="param-type">string</span>
 
 
             
@@ -243,7 +242,7 @@ Note: We recommand you to use the global function @see <a href="global.html#crea
                 </td>
             
 
-            <td class="description last"><p>The image for the sprite you want to be at start. (OPTIONAL)</p></td>
+            <td class="description last"><p>Optional image sources for costumes.</p></td>
         </tr>
 
     
@@ -284,7 +283,7 @@ Note: We recommand you to use the global function @see <a href="global.html#crea
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="library.js.html">library.js</a>, <a href="library.js.html#line93">line 93</a>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line114">line 114</a>
     </li></ul></dd>
     
 
@@ -324,7 +323,7 @@ Note: We recommand you to use the global function @see <a href="global.html#crea
 
 
     <ul>
-        <li>Drawable</li>
+        <li><a href="Drawable.html">Drawable</a></li>
     </ul>
 
 
@@ -332,13 +331,6 @@ Note: We recommand you to use the global function @see <a href="global.html#crea
 
     
 
-    
-        <h3 class="subsection-title">Classes</h3>
-
-        <dl>
-            <dt><a href="Sprite.html">Sprite</a></dt>
-            <dd>Creates an instance of Sprite.</dd>
-        </dl>
     
 
     
@@ -352,18 +344,1149 @@ Note: We recommand you to use the global function @see <a href="global.html#crea
 
         
             
-<h4 class="name" id="gravity"><span class="type-signature"></span>gravity<span class="type-signature"></span></h4>
+<h4 class="name" id="border"><span class="type-signature"></span>border<span class="type-signature"> :boolean</span></h4>
 
 
-<p class="summary">The above code is setting the value of the property <code>gravity</code> to 0 in the global scope.</p>
+<p class="summary"><p>Whether sprite is touching a border</p>.</p>
 
 
 
 <div class="description">
-    <p>The above code is setting the value of the property <code>gravity</code> to 0 in the global scope.</p>
+    <p>Whether sprite is touching a border</p>
 </div>
 
 
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">boolean</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line135">line 135</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="color"><span class="type-signature"></span>color<span class="type-signature"> :string</span></h4>
+
+
+<p class="summary"><p>Sprite color</p>.</p>
+
+
+
+<div class="description">
+    <p>Sprite color</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">string</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line125">line 125</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="controls"><span class="type-signature"></span>controls<span class="type-signature"> :Object|null</span></h4>
+
+
+<p class="summary"><p>Control scheme for movement</p>.</p>
+
+
+
+<div class="description">
+    <p>Control scheme for movement</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Object</span>
+|
+
+<span class="param-type">null</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line159">line 159</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="costumes"><span class="type-signature"></span>costumes<span class="type-signature"> :Array.&lt;HTMLImageElement></span></h4>
+
+
+<p class="summary"><p>List of costume images</p>.</p>
+
+
+
+<div class="description">
+    <p>List of costume images</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Array.&lt;HTMLImageElement></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line147">line 147</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="currentCostume"><span class="type-signature"></span>currentCostume<span class="type-signature"> :number</span></h4>
+
+
+<p class="summary"><p>Index of the current costume</p>.</p>
+
+
+
+<div class="description">
+    <p>Index of the current costume</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line149">line 149</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="currentPath"><span class="type-signature"></span>currentPath<span class="type-signature"> :Array.&lt;{x: number, y: number}>|null</span></h4>
+
+
+<p class="summary"><p>Current pen path</p>.</p>
+
+
+
+<div class="description">
+    <p>Current pen path</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Array.&lt;{x: number, y: number}></span>
+|
+
+<span class="param-type">null</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line169">line 169</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="events"><span class="type-signature"></span>events<span class="type-signature"> :Object.&lt;string, Array.&lt;function()>></span></h4>
+
+
+<p class="summary"><p>Event listeners</p>.</p>
+
+
+
+<div class="description">
+    <p>Event listeners</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Object.&lt;string, Array.&lt;function()>></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line153">line 153</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="gravity"><span class="type-signature"></span>gravity<span class="type-signature"> :number</span></h4>
+
+
+<p class="summary"><p>Gravity effect in pixels per frame</p>.</p>
+
+
+
+<div class="description">
+    <p>Gravity effect in pixels per frame</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line161">line 161</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="hidden"><span class="type-signature"></span>hidden<span class="type-signature"> :boolean</span></h4>
+
+
+<p class="summary"><p>Whether the object is hidden</p>.</p>
+
+
+
+<div class="description">
+    <p>Whether the object is hidden</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">boolean</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Drawable.html#hidden">Drawable#hidden</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line98">line 98</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="hitbox"><span class="type-signature"></span>hitbox<span class="type-signature"> :boolean</span></h4>
+
+
+<p class="summary"><p>Whether sprite acts as a hitbox</p>.</p>
+
+
+
+<div class="description">
+    <p>Whether sprite acts as a hitbox</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">boolean</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line163">line 163</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="loadedCostumes"><span class="type-signature"></span>loadedCostumes<span class="type-signature"> :Array.&lt;HTMLImageElement></span></h4>
+
+
+<p class="summary"><p>Loaded costume images</p>.</p>
+
+
+
+<div class="description">
+    <p>Loaded costume images</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Array.&lt;HTMLImageElement></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line151">line 151</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="penColor"><span class="type-signature"></span>penColor<span class="type-signature"> :string</span></h4>
+
+
+<p class="summary"><p>Pen color</p>.</p>
+
+
+
+<div class="description">
+    <p>Pen color</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">string</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line171">line 171</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="penDown"><span class="type-signature"></span>penDown<span class="type-signature"> :boolean</span></h4>
+
+
+<p class="summary"><p>Whether the pen is down for drawing</p>.</p>
+
+
+
+<div class="description">
+    <p>Whether the pen is down for drawing</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">boolean</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line165">line 165</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="penThickness"><span class="type-signature"></span>penThickness<span class="type-signature"> :number</span></h4>
+
+
+<p class="summary"><p>Pen thickness in pixels</p>.</p>
+
+
+
+<div class="description">
+    <p>Pen thickness in pixels</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line173">line 173</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="penTrails"><span class="type-signature"></span>penTrails<span class="type-signature"> :Array.&lt;Array.&lt;{x: number, y: number}>></span></h4>
+
+
+<p class="summary"><p>Array of pen paths</p>.</p>
+
+
+
+<div class="description">
+    <p>Array of pen paths</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Array.&lt;Array.&lt;{x: number, y: number}>></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line167">line 167</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="prevX"><span class="type-signature"></span>prevX<span class="type-signature"> :number</span></h4>
+
+
+<p class="summary"><p>Previous x position</p>.</p>
+
+
+
+<div class="description">
+    <p>Previous x position</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
 
 
 
@@ -416,18 +1539,28 @@ Note: We recommand you to use the global function @see <a href="global.html#crea
 
         
             
-<h4 class="name" id="hitbox"><span class="type-signature"></span>hitbox<span class="type-signature"></span></h4>
+<h4 class="name" id="prevY"><span class="type-signature"></span>prevY<span class="type-signature"> :number</span></h4>
 
 
-<p class="summary">The above code is setting the value of the <code>hitbox</code> property to <code>false</code>.</p>
+<p class="summary"><p>Previous y position</p>.</p>
 
 
 
 <div class="description">
-    <p>The above code is setting the value of the <code>hitbox</code> property to <code>false</code>.</p>
+    <p>Previous y position</p>
 </div>
 
 
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
 
 
 
@@ -480,18 +1613,28 @@ Note: We recommand you to use the global function @see <a href="global.html#crea
 
         
             
-<h4 class="name" id="scale"><span class="type-signature"></span>scale<span class="type-signature"></span></h4>
+<h4 class="name" id="scale"><span class="type-signature"></span>scale<span class="type-signature"> :number</span></h4>
 
 
-<p class="summary">The above code is setting the value of the property <code>scale</code> to 1.0 in the global context.</p>
+<p class="summary"><p>Scaling factor for size</p>.</p>
 
 
 
 <div class="description">
-    <p>The above code is setting the value of the property <code>scale</code> to 1.0 in the global context.</p>
+    <p>Scaling factor for size</p>
 </div>
 
 
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
 
 
 
@@ -526,7 +1669,7 @@ Note: We recommand you to use the global function @see <a href="global.html#crea
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="library.js.html">library.js</a>, <a href="library.js.html#line124">line 124</a>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line157">line 157</a>
     </li></ul></dd>
     
 
@@ -544,18 +1687,28 @@ Note: We recommand you to use the global function @see <a href="global.html#crea
 
         
             
-<h4 class="name" id="size"><span class="type-signature"></span>size<span class="type-signature"></span></h4>
+<h4 class="name" id="size"><span class="type-signature"></span>size<span class="type-signature"> :number</span></h4>
 
 
-<p class="summary">Sprite The above code is setting the value of the property <code>size</code> to 30 in the global context.</p>
+<p class="summary"><p>Sprite size in pixels</p>.</p>
 
 
 
 <div class="description">
-    <p>Sprite The above code is setting the value of the property <code>size</code> to 30 in the global context.</p>
+    <p>Sprite size in pixels</p>
 </div>
 
 
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
 
 
 
@@ -590,7 +1743,7 @@ Note: We recommand you to use the global function @see <a href="global.html#crea
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="library.js.html">library.js</a>, <a href="library.js.html#line109">line 109</a>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line131">line 131</a>
     </li></ul></dd>
     
 
@@ -608,18 +1761,28 @@ Note: We recommand you to use the global function @see <a href="global.html#crea
 
         
             
-<h4 class="name" id="speed"><span class="type-signature"></span>speed<span class="type-signature"></span></h4>
+<h4 class="name" id="speed"><span class="type-signature"></span>speed<span class="type-signature"> :number</span></h4>
 
 
-<p class="summary">The above code is setting the value of the property &quot;speed&quot; to 5 in the global scope.</p>
+<p class="summary"><p>Movement speed in pixels per frame</p>.</p>
 
 
 
 <div class="description">
-    <p>The above code is setting the value of the property &quot;speed&quot; to 5 in the global scope.</p>
+    <p>Movement speed in pixels per frame</p>
 </div>
 
 
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
 
 
 
@@ -654,7 +1817,609 @@ Note: We recommand you to use the global function @see <a href="global.html#crea
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="library.js.html">library.js</a>, <a href="library.js.html#line111">line 111</a>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line133">line 133</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="touchCallbacks"><span class="type-signature"></span>touchCallbacks<span class="type-signature"> :Array.&lt;{target: <a href="Sprite.html">Sprite</a>, callback: function()}></span></h4>
+
+
+<p class="summary"><p>Touch event callbacks</p>.</p>
+
+
+
+<div class="description">
+    <p>Touch event callbacks</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Array.&lt;{target: <a href="Sprite.html">Sprite</a>, callback: function()}></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line139">line 139</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="touchEndCallbacks"><span class="type-signature"></span>touchEndCallbacks<span class="type-signature"> :Array.&lt;{target: <a href="Sprite.html">Sprite</a>, callback: function()}></span></h4>
+
+
+<p class="summary"><p>Touch-end callbacks</p>.</p>
+
+
+
+<div class="description">
+    <p>Touch-end callbacks</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Array.&lt;{target: <a href="Sprite.html">Sprite</a>, callback: function()}></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line145">line 145</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="touchOnceCache"><span class="type-signature"></span>touchOnceCache<span class="type-signature"> :Set.&lt;<a href="Sprite.html">Sprite</a>></span></h4>
+
+
+<p class="summary"><p>Cache for touch-once events</p>.</p>
+
+
+
+<div class="description">
+    <p>Cache for touch-once events</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Set.&lt;<a href="Sprite.html">Sprite</a>></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line141">line 141</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="touchOnceCallbacks"><span class="type-signature"></span>touchOnceCallbacks<span class="type-signature"> :Array.&lt;{target: <a href="Sprite.html">Sprite</a>, callback: function()}></span></h4>
+
+
+<p class="summary"><p>Touch-once callbacks</p>.</p>
+
+
+
+<div class="description">
+    <p>Touch-once callbacks</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Array.&lt;{target: <a href="Sprite.html">Sprite</a>, callback: function()}></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line143">line 143</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="touching"><span class="type-signature"></span>touching<span class="type-signature"> :Array.&lt;<a href="Sprite.html">Sprite</a>></span></h4>
+
+
+<p class="summary"><p>List of sprites currently touching</p>.</p>
+
+
+
+<div class="description">
+    <p>List of sprites currently touching</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Array.&lt;<a href="Sprite.html">Sprite</a>></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line137">line 137</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="useOriginalSize"><span class="type-signature"></span>useOriginalSize<span class="type-signature"> :boolean</span></h4>
+
+
+<p class="summary"><p>Use original image size for rendering</p>.</p>
+
+
+
+<div class="description">
+    <p>Use original image size for rendering</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">boolean</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line155">line 155</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="x"><span class="type-signature"></span>x<span class="type-signature"> :number</span></h4>
+
+
+<p class="summary"><p>X position</p>.</p>
+
+
+
+<div class="description">
+    <p>X position</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Drawable.html#x">Drawable#x</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line94">line 94</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="y"><span class="type-signature"></span>y<span class="type-signature"> :number</span></h4>
+
+
+<p class="summary"><p>Y position</p>.</p>
+
+
+
+<div class="description">
+    <p>Y position</p>
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">number</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Drawable.html#y">Drawable#y</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line96">line 96</a>
     </li></ul></dd>
     
 
@@ -686,13 +2451,13 @@ Note: We recommand you to use the global function @see <a href="global.html#crea
     
 
     
-    <p class="summary">The clearPen function resets the pen trails and current path in a JavaScript program.</p>
+    <p class="summary">Clears all pen trails for this sprite.</p>
     
 
 
 
 <div class="description">
-    <p>The clearPen function resets the pen trails and current path in a JavaScript program.</p>
+    <p>Clears all pen trails for this sprite.</p>
 </div>
 
 
@@ -736,7 +2501,7 @@ Note: We recommand you to use the global function @see <a href="global.html#crea
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="library.js.html">library.js</a>, <a href="library.js.html#line233">line 233</a>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line260">line 260</a>
     </li></ul></dd>
     
 
@@ -772,18 +2537,224 @@ Note: We recommand you to use the global function @see <a href="global.html#crea
     
 
     
-    <h4 class="name" id="goTo"><span class="type-signature"></span>goTo<span class="signature">(x, y)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="draw"><span class="type-signature"></span>draw<span class="signature">()</span><span class="type-signature"></span></h4>
     
 
     
-    <p class="summary">This is a function that set sprite position.</p>
+    <p class="summary">Draws the sprite on the canvas.</p>
     
 
 
 
 <div class="description">
-    <p>This is a function that set sprite position.
-Tips: Use Sprite.x = value is possible too.</p>
+    <p>Draws the sprite on the canvas.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="Drawable.html#draw">Drawable#draw</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line324">line 324</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="getCollisionSize"><span class="type-signature"></span>getCollisionSize<span class="signature">()</span><span class="type-signature"> &rarr; {Object}</span></h4>
+    
+
+    
+    <p class="summary">Gets the sprite’s collision size.</p>
+    
+
+
+
+<div class="description">
+    <p>Gets the sprite’s collision size.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line373">line 373</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The collision dimensions.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="goTo"><span class="type-signature"></span>goTo<span class="signature">(x, y)</span><span class="type-signature"></span></h4>
+    
+
+    
+    <p class="summary">Sets the sprite’s position.</p>
+    
+
+
+
+<div class="description">
+    <p>Sets the sprite’s position.</p>
 </div>
 
 
@@ -825,7 +2796,7 @@ Tips: Use Sprite.x = value is possible too.</p>
             <td class="type">
             
                 
-<span class="param-type">*</span>
+<span class="param-type">number</span>
 
 
             
@@ -835,7 +2806,7 @@ Tips: Use Sprite.x = value is possible too.</p>
 
             
 
-            <td class="description last"><p>The sprite X</p></td>
+            <td class="description last"><p>The new x-coordinate.</p></td>
         </tr>
 
     
@@ -848,7 +2819,7 @@ Tips: Use Sprite.x = value is possible too.</p>
             <td class="type">
             
                 
-<span class="param-type">*</span>
+<span class="param-type">number</span>
 
 
             
@@ -858,7 +2829,7 @@ Tips: Use Sprite.x = value is possible too.</p>
 
             
 
-            <td class="description last"><p>The sprite Y</p></td>
+            <td class="description last"><p>The new y-coordinate.</p></td>
         </tr>
 
     
@@ -899,7 +2870,7 @@ Tips: Use Sprite.x = value is possible too.</p>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="library.js.html">library.js</a>, <a href="library.js.html#line214">line 214</a>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line244">line 244</a>
     </li></ul></dd>
     
 
@@ -935,19 +2906,17 @@ Tips: Use Sprite.x = value is possible too.</p>
     
 
     
-    <h4 class="name" id="isClicked"><span class="type-signature"></span>isClicked<span class="signature">(mouseX, mouseY)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="isClicked"><span class="type-signature"></span>isClicked<span class="signature">(mouseX, mouseY)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
     
 
     
-    <p class="summary"><p>The function isClicked determines if a mouse click falls within the boundaries of an object
-based on its position and size.</p></p>
+    <p class="summary">Checks if the sprite is clicked at the given coordinates.</p>
     
 
 
 
 <div class="description">
-    <p>The function isClicked determines if a mouse click falls within the boundaries of an object
-based on its position and size.</p>
+    <p>Checks if the sprite is clicked at the given coordinates.</p>
 </div>
 
 
@@ -988,15 +2957,18 @@ based on its position and size.</p>
 
             <td class="type">
             
+                
+<span class="param-type">number</span>
+
+
+            
             </td>
 
             
 
             
 
-            <td class="description last"><p>The <code>mouseX</code> parameter represents the x-coordinate of the mouse pointer on the
-screen. It is used in the <code>isClicked</code> function to determine if a specific point on the screen
-has been clicked.</p></td>
+            <td class="description last"><p>The mouse x-coordinate.</p></td>
         </tr>
 
     
@@ -1008,16 +2980,18 @@ has been clicked.</p></td>
 
             <td class="type">
             
+                
+<span class="param-type">number</span>
+
+
+            
             </td>
 
             
 
             
 
-            <td class="description last"><p>The <code>mouseY</code> parameter in the <code>isClicked</code> function represents the y-coordinate
-of the mouse pointer on the screen. This function is checking if the mouse pointer is within the
-boundaries of a clickable area defined by the object's position (<code>this.x</code>, <code>this.y</code>) and
-collision size (`size</p></td>
+            <td class="description last"><p>The mouse y-coordinate.</p></td>
         </tr>
 
     
@@ -1058,7 +3032,7 @@ collision size (`size</p></td>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="library.js.html">library.js</a>, <a href="library.js.html#line262">line 262</a>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line284">line 284</a>
     </li></ul></dd>
     
 
@@ -1087,14 +3061,22 @@ collision size (`size</p></td>
 
         
 <div class="param-desc">
-    <p>The function <code>isClicked</code> is checking if the mouse coordinates <code>(mouseX, mouseY)</code> are
-within the bounds of a rectangle centered at <code>(this.x, this.y)</code> with width <code>w</code> and height <code>h</code>.
-If the mouse coordinates are within the rectangle, the function returns <code>true</code>, indicating that
-a click event has occurred within the bounds of the rectangle. If the mouse coordinates are
-outside the</p>
+    <p>True if clicked within the sprite’s bounds.</p>
 </div>
 
 
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
 
     
 
@@ -1108,17 +3090,17 @@ outside the</p>
     
 
     
-    <h4 class="name" id="isHovered"><span class="type-signature"></span>isHovered<span class="signature">(mx, my)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="isHovered"><span class="type-signature"></span>isHovered<span class="signature">(mx, my)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
     
 
     
-    <p class="summary">The function isHovered(mx, my) returns the result of calling the isClicked(mx, my) function.</p>
+    <p class="summary">Checks if the sprite is hovered at the given coordinates.</p>
     
 
 
 
 <div class="description">
-    <p>The function isHovered(mx, my) returns the result of calling the isClicked(mx, my) function.</p>
+    <p>Checks if the sprite is hovered at the given coordinates.</p>
 </div>
 
 
@@ -1159,14 +3141,18 @@ outside the</p>
 
             <td class="type">
             
+                
+<span class="param-type">number</span>
+
+
+            
             </td>
 
             
 
             
 
-            <td class="description last"><p>The <code>mx</code> parameter typically represents the x-coordinate of the mouse cursor on the
-screen.</p></td>
+            <td class="description last"><p>The mouse x-coordinate.</p></td>
         </tr>
 
     
@@ -1178,14 +3164,18 @@ screen.</p></td>
 
             <td class="type">
             
+                
+<span class="param-type">number</span>
+
+
+            
             </td>
 
             
 
             
 
-            <td class="description last"><p>The parameter <code>my</code> typically represents the y-coordinate of the mouse pointer on the
-screen. It is used to determine the vertical position of the mouse cursor.</p></td>
+            <td class="description last"><p>The mouse y-coordinate.</p></td>
         </tr>
 
     
@@ -1226,7 +3216,7 @@ screen. It is used to determine the vertical position of the mouse cursor.</p></
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="library.js.html">library.js</a>, <a href="library.js.html#line350">line 350</a>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line357">line 357</a>
     </li></ul></dd>
     
 
@@ -1255,11 +3245,22 @@ screen. It is used to determine the vertical position of the mouse cursor.</p></
 
         
 <div class="param-desc">
-    <p>The <code>isHovered</code> function is returning the result of calling the <code>isClicked</code> function
-with the <code>mx</code> and <code>my</code> parameters.</p>
+    <p>True if the mouse is over the sprite.</p>
 </div>
 
 
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
 
     
 
@@ -1273,17 +3274,17 @@ with the <code>mx</code> and <code>my</code> parameters.</p>
     
 
     
-    <h4 class="name" id="isOnGround"><span class="type-signature"></span>isOnGround<span class="signature">()</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="isOnGround"><span class="type-signature"></span>isOnGround<span class="signature">()</span><span class="type-signature"> &rarr; {boolean}</span></h4>
     
 
     
-    <p class="summary">The function isOnGround() checks if the object is touching any other object with a hitbox.</p>
+    <p class="summary">Checks if the sprite is on the ground (touching a hitbox).</p>
     
 
 
 
 <div class="description">
-    <p>The function isOnGround() checks if the object is touching any other object with a hitbox.</p>
+    <p>Checks if the sprite is on the ground (touching a hitbox).</p>
 </div>
 
 
@@ -1327,7 +3328,7 @@ with the <code>mx</code> and <code>my</code> parameters.</p>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="library.js.html">library.js</a>, <a href="library.js.html#line378">line 378</a>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line385">line 385</a>
     </li></ul></dd>
     
 
@@ -1356,11 +3357,22 @@ with the <code>mx</code> and <code>my</code> parameters.</p>
 
         
 <div class="param-desc">
-    <p>The <code>isOnGround()</code> function is returning a boolean value based on whether any of the
-objects in the <code>touching</code> array have a <code>hitbox</code> property.</p>
+    <p>True if touching a hitbox sprite.</p>
 </div>
 
 
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
 
     
 
@@ -1374,19 +3386,17 @@ objects in the <code>touching</code> array have a <code>hitbox</code> property.<
     
 
     
-    <h4 class="name" id="isTouching"><span class="type-signature"></span>isTouching<span class="signature">(other)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="isTouching"><span class="type-signature"></span>isTouching<span class="signature">(other)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
     
 
     
-    <p class="summary"><p>The function <code>isTouching</code> checks for collision between two sprites using custom hitboxes if
-available, otherwise falling back to rectangular collision detection.</p></p>
+    <p class="summary">Checks if this sprite is touching another sprite.</p>
     
 
 
 
 <div class="description">
-    <p>The function <code>isTouching</code> checks for collision between two sprites using custom hitboxes if
-available, otherwise falling back to rectangular collision detection.</p>
+    <p>Checks if this sprite is touching another sprite.</p>
 </div>
 
 
@@ -1427,16 +3437,18 @@ available, otherwise falling back to rectangular collision detection.</p>
 
             <td class="type">
             
+                
+<span class="param-type"><a href="Sprite.html">Sprite</a></span>
+
+
+            
             </td>
 
             
 
             
 
-            <td class="description last"><p>The <code>other</code> parameter in the <code>isTouching</code> function refers to another sprite or
-object that you want to check for collision with the current sprite. This function first checks
-if both sprites have a custom hitbox defined by a polygon. If they do, it translates the
-polygons to world coordinates and</p></td>
+            <td class="description last"><p>The other sprite to check collision with.</p></td>
         </tr>
 
     
@@ -1477,7 +3489,7 @@ polygons to world coordinates and</p></td>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="library.js.html">library.js</a>, <a href="library.js.html#line287">line 287</a>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line301">line 301</a>
     </li></ul></dd>
     
 
@@ -1506,16 +3518,186 @@ polygons to world coordinates and</p></td>
 
         
 <div class="param-desc">
-    <p>The <code>isTouching</code> function returns a boolean value indicating whether the two sprites
-are touching or intersecting based on their hitbox polygons if both sprites have custom hitbox
-polygons defined. If either sprite does not have a hitbox polygon defined, the function falls
-back to rectangular collision detection and returns a boolean value based on whether the
-rectangles of the two sprites are intersecting.</p>
+    <p>True if the sprites are touching.</p>
 </div>
 
 
 
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
     
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="on"><span class="type-signature"></span>on<span class="signature">(eventName, callback)</span><span class="type-signature"></span></h4>
+    
+
+    
+    <p class="summary">Registers an event listener.</p>
+    
+
+
+
+<div class="description">
+    <p>Registers an event listener.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>eventName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The event name.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The callback function.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line196">line 196</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1531,13 +3713,13 @@ rectangles of the two sprites are intersecting.</p>
     
 
     
-    <p class="summary">The onTouch function adds a target and callback to the touchCallbacks array.</p>
+    <p class="summary">Registers a callback for continuous touch with a target.</p>
     
 
 
 
 <div class="description">
-    <p>The onTouch function adds a target and callback to the touchCallbacks array.</p>
+    <p>Registers a callback for continuous touch with a target.</p>
 </div>
 
 
@@ -1578,15 +3760,18 @@ rectangles of the two sprites are intersecting.</p>
 
             <td class="type">
             
+                
+<span class="param-type"><a href="Sprite.html">Sprite</a></span>
+
+
+            
             </td>
 
             
 
             
 
-            <td class="description last"><p>The <code>target</code> parameter in the <code>onTouch</code> function represents the element or object
-that the touch event will be applied to. It could be a DOM element, a specific area on the
-screen, or any other target that can receive touch input.</p></td>
+            <td class="description last"><p>The sprite to check for touching.</p></td>
         </tr>
 
     
@@ -1598,14 +3783,18 @@ screen, or any other target that can receive touch input.</p></td>
 
             <td class="type">
             
+                
+<span class="param-type">function</span>
+
+
+            
             </td>
 
             
 
             
 
-            <td class="description last"><p>The <code>callback</code> parameter in the <code>onTouch</code> function is a function that will be
-executed when a touch event occurs on the specified <code>target</code>.</p></td>
+            <td class="description last"><p>The callback to execute on touch.</p></td>
         </tr>
 
     
@@ -1646,7 +3835,7 @@ executed when a touch event occurs on the specified <code>target</code>.</p></td
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="library.js.html">library.js</a>, <a href="library.js.html#line164">line 164</a>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line206">line 206</a>
     </li></ul></dd>
     
 
@@ -1686,15 +3875,13 @@ executed when a touch event occurs on the specified <code>target</code>.</p></td
     
 
     
-    <p class="summary"><p>The onTouchEnd function in JavaScript adds a target and callback to an array of touch end
-callbacks.</p></p>
+    <p class="summary">Registers a callback when touch with a target ends.</p>
     
 
 
 
 <div class="description">
-    <p>The onTouchEnd function in JavaScript adds a target and callback to an array of touch end
-callbacks.</p>
+    <p>Registers a callback when touch with a target ends.</p>
 </div>
 
 
@@ -1735,15 +3922,18 @@ callbacks.</p>
 
             <td class="type">
             
+                
+<span class="param-type"><a href="Sprite.html">Sprite</a></span>
+
+
+            
             </td>
 
             
 
             
 
-            <td class="description last"><p>The <code>target</code> parameter in the <code>onTouchEnd</code> function refers to the element or
-object on which the touch event is expected to end. This could be a DOM element, a specific
-component in a UI framework, or any other target that is relevant to the touch event.</p></td>
+            <td class="description last"><p>The sprite to check for touch ending.</p></td>
         </tr>
 
     
@@ -1755,634 +3945,23 @@ component in a UI framework, or any other target that is relevant to the touch e
 
             <td class="type">
             
+                
+<span class="param-type">function</span>
+
+
+            
             </td>
 
             
 
             
 
-            <td class="description last"><p>The <code>callback</code> parameter is a function that will be executed when the touch
-end event occurs on the specified <code>target</code>.</p></td>
+            <td class="description last"><p>The callback to execute on touch end.</p></td>
         </tr>
 
     
     </tbody>
 </table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="library.js.html">library.js</a>, <a href="library.js.html#line190">line 190</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="onTouchOnce"><span class="type-signature"></span>onTouchOnce<span class="signature">(target, callback)</span><span class="type-signature"></span></h4>
-    
-
-    
-    <p class="summary">The <code>onTouchOnce</code> function adds a target and callback to an array of touch event callbacks.</p>
-    
-
-
-
-<div class="description">
-    <p>The <code>onTouchOnce</code> function adds a target and callback to an array of touch event callbacks.</p>
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>target</code></td>
-            
-
-            <td class="type">
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>The <code>target</code> parameter in the <code>onTouchOnce</code> function refers to the element or
-object on which the touch event will be listened for. This could be a DOM element in a web
-application, a UI element in a mobile app, or any other interactive component that can receive
-touch input.</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>callback</code></td>
-            
-
-            <td class="type">
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>The <code>callback</code> parameter is a function that will be executed when the <code>target</code>
-is touched once.</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="library.js.html">library.js</a>, <a href="library.js.html#line177">line 177</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="setControlScheme"><span class="type-signature"></span>setControlScheme<span class="signature">(scheme)</span><span class="type-signature"></span></h4>
-    
-
-    
-    <p class="summary">The function <code>setControlScheme</code> sets the control scheme for a given object.</p>
-    
-
-
-
-<div class="description">
-    <p>The function <code>setControlScheme</code> sets the control scheme for a given object.</p>
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>scheme</code></td>
-            
-
-            <td class="type">
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Scheme refers to the specific set of controls or inputs that are used to
-interact with a system or application. It could include keyboard keys, mouse buttons, game
-controller buttons, touch gestures, or any other input method that the user can use to navigate
-or operate the system.</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="library.js.html">library.js</a>, <a href="library.js.html#line361">line 361</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="setCostume"><span class="type-signature"></span>setCostume<span class="signature">(index)</span><span class="type-signature"></span></h4>
-    
-
-    
-    <p class="summary"><p>The setCostume function sets the current costume to the one at the specified index if it is
-within the valid range.</p></p>
-    
-
-
-
-<div class="description">
-    <p>The setCostume function sets the current costume to the one at the specified index if it is
-within the valid range.</p>
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>index</code></td>
-            
-
-            <td class="type">
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>The <code>index</code> parameter in the <code>setCostume</code> function represents the position of the
-costume in the <code>costumes</code> array that you want to set as the current costume. It should be a
-non-negative integer that is less than the length of the <code>costumes</code> array.</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="library.js.html">library.js</a>, <a href="library.js.html#line337">line 337</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="startDrawing"><span class="type-signature"></span>startDrawing<span class="signature">()</span><span class="type-signature"></span></h4>
-    
-
-    
-    <p class="summary"><p>The <code>startDrawing</code> function initializes a new drawing path at the current position if the pen is
-not already down.</p></p>
-    
-
-
-
-<div class="description">
-    <p>The <code>startDrawing</code> function initializes a new drawing path at the current position if the pen is
-not already down.</p>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="library.js.html">library.js</a>, <a href="library.js.html#line199">line 199</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="stopDrawing"><span class="type-signature"></span>stopDrawing<span class="signature">()</span><span class="type-signature"></span></h4>
-    
-
-    
-    <p class="summary"><p>The function <code>stopDrawing()</code> ends the current drawing path by setting <code>penDown</code> to false and
-<code>currentPath</code> to null.</p></p>
-    
-
-
-
-<div class="description">
-    <p>The function <code>stopDrawing()</code> ends the current drawing path by setting <code>penDown</code> to false and
-<code>currentPath</code> to null.</p>
-</div>
-
-
-
-
-
-
-
 
 
 
@@ -2449,6 +4028,878 @@ not already down.</p>
 
 
         
+            
+
+    
+
+    
+    <h4 class="name" id="onTouchOnce"><span class="type-signature"></span>onTouchOnce<span class="signature">(target, callback)</span><span class="type-signature"></span></h4>
+    
+
+    
+    <p class="summary">Registers a callback for a single touch event with a target.</p>
+    
+
+
+
+<div class="description">
+    <p>Registers a callback for a single touch event with a target.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>target</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Sprite.html">Sprite</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The sprite to check for touching.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The callback to execute once on touch.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line215">line 215</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="setControlScheme"><span class="type-signature"></span>setControlScheme<span class="signature">(scheme)</span><span class="type-signature"></span></h4>
+    
+
+    
+    <p class="summary">Sets the control scheme for the sprite.</p>
+    
+
+
+
+<div class="description">
+    <p>Sets the control scheme for the sprite.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>scheme</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The control scheme object.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line365">line 365</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="setCostume"><span class="type-signature"></span>setCostume<span class="signature">(index)</span><span class="type-signature"></span></h4>
+    
+
+    
+    <p class="summary">Sets the current costume by index.</p>
+    
+
+
+
+<div class="description">
+    <p>Sets the current costume by index.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>index</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The costume index.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line347">line 347</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="startDrawing"><span class="type-signature"></span>startDrawing<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+    <p class="summary">Starts drawing a pen trail at the current position.</p>
+    
+
+
+
+<div class="description">
+    <p>Starts drawing a pen trail at the current position.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line231">line 231</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="stopDrawing"><span class="type-signature"></span>stopDrawing<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+    <p class="summary">Stops drawing the pen trail.</p>
+    
+
+
+
+<div class="description">
+    <p>Stops drawing the pen trail.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line252">line 252</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="trigger"><span class="type-signature"></span>trigger<span class="signature">(eventName, eventObject)</span><span class="type-signature"></span></h4>
+    
+
+    
+    <p class="summary">Triggers all callbacks for an event.</p>
+    
+
+
+
+<div class="description">
+    <p>Triggers all callbacks for an event.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>eventName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The event name.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>eventObject</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The event data.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line270">line 270</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="update"><span class="type-signature"></span>update<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+    <p class="summary">Updates the sprite state.</p>
+    
+
+
+
+<div class="description">
+    <p>Updates the sprite state. Override in specific sprites.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="library.js.html">library.js</a>, <a href="library.js.html#line187">line 187</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
     
 
     
@@ -2464,13 +4915,13 @@ not already down.</p>
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Sprite.html">Sprite</a></li><li><a href="Text.html">Text</a></li></ul><h3>Global</h3><ul><li><a href="global.html#createSprite">createSprite</a></li><li><a href="global.html#createText">createText</a></li><li><a href="global.html#cursor">cursor</a></li><li><a href="global.html#debug">debug</a></li><li><a href="global.html#hide">hide</a></li><li><a href="global.html#setBackground">setBackground</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Drawable.html">Drawable</a></li><li><a href="Sprite.html">Sprite</a></li><li><a href="Text.html">Text</a></li></ul><h3>Global</h3><ul><li><a href="global.html#autoGenerateHitbox">autoGenerateHitbox</a></li><li><a href="global.html#backgroundImg">backgroundImg</a></li><li><a href="global.html#canvaX">canvaX</a></li><li><a href="global.html#canvaY">canvaY</a></li><li><a href="global.html#canvasEl">canvasEl</a></li><li><a href="global.html#convexHull">convexHull</a></li><li><a href="global.html#createSprite">createSprite</a></li><li><a href="global.html#createText">createText</a></li><li><a href="global.html#cross">cross</a></li><li><a href="global.html#ctx">ctx</a></li><li><a href="global.html#cursor">cursor</a></li><li><a href="global.html#debug">debug</a></li><li><a href="global.html#drawables">drawables</a></li><li><a href="global.html#gameLoop">gameLoop</a></li><li><a href="global.html#generateHitboxFromImage">generateHitboxFromImage</a></li><li><a href="global.html#hide">hide</a></li><li><a href="global.html#hoverInfoEl">hoverInfoEl</a></li><li><a href="global.html#keys">keys</a></li><li><a href="global.html#mousePosEl">mousePosEl</a></li><li><a href="global.html#polygonsIntersect">polygonsIntersect</a></li><li><a href="global.html#prevKeys">prevKeys</a></li><li><a href="global.html#setBackground">setBackground</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Sun Apr 06 2025 03:43:26 GMT+0000 (Coordinated Universal Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Sat Apr 12 2025 02:44:05 GMT+0000 (Coordinated Universal Time)
 </footer>
 
 <script> prettyPrint(); </script>
