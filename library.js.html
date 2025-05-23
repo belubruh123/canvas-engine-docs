@@ -29,11 +29,102 @@
             <pre class="prettyprint source linenums"><code>/**
  * @file The Best Engine Ever!
  *
- * @version 0.7-Ultimate
+ * @version 0.8-Portable
  * @author Jeremy Lin
  * @copyright 2025
  */
 
+
+window.addEventListener('DOMContentLoaded', () => {
+  // Create and insert the style
+  const style = document.createElement('style');
+  style.textContent = `
+    body, html {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      background: rgb(255, 255, 255);
+    }
+    #canvasContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+      background: rgb(32, 32, 32);
+    }
+    #canvasEl {
+      border: 1px solid white;
+      border-radius: 10px;
+    }
+    #mousePos {
+      position: absolute;
+      top: 5px;
+      left: 10px;
+      color: white;
+      font-family: monospace;
+      font-size: 14px;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 4px 8px;
+      border-radius: 4px;
+      display: none;
+    }
+    #hoverInfo {
+      position: absolute;
+      top: 40px;
+      left: 10px;
+      color: #00ffcc;
+      font-family: monospace;
+      font-size: 13px;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 6px 10px;
+      border-radius: 4px;
+      white-space: pre-line;
+      display: none;
+    }
+  `;
+  document.head.appendChild(style);
+
+  // Create mouse position display
+  const mousePos = document.createElement('div');
+  mousePos.id = 'mousePos';
+  mousePos.textContent = 'x: 0, y: 0';
+  document.body.appendChild(mousePos);
+
+  // Create canvas container
+  const canvasContainer = document.createElement('div');
+  canvasContainer.id = 'canvasContainer';
+  document.body.appendChild(canvasContainer);
+
+  // Create canvas
+  const canvas = document.createElement('canvas');
+  canvas.id = 'canvasEl';
+  canvasContainer.appendChild(canvas);
+
+  // Create hidden input template
+  const input = document.createElement('input');
+  input.id = 'typeboxTemplate';
+  input.type = 'text';
+  input.style.position = 'absolute';
+  input.style.border = 'none';
+  input.style.borderRadius = '8px';
+  input.style.padding = '8px 12px';
+  input.style.background = '#000';
+  input.style.color = '#fff';
+  input.style.font = '20px monospace';
+  input.style.outline = 'none';
+  input.style.display = 'none';
+  canvasContainer.appendChild(input);
+
+  // Create hover info box
+  const hoverInfo = document.createElement('div');
+  hoverInfo.id = 'hoverInfo';
+  document.body.appendChild(hoverInfo);
+});
+
+window.addEventListener('DOMContentLoaded', () => {
 /** @type {boolean} Enables debug mode to show mouse position and hover info */
 let debug = true;
 
@@ -1685,7 +1776,8 @@ canvasEl.addEventListener("contextmenu", (e) => e.preventDefault());
 setTimeout(() => {
   LibraryLoopMGB();
 }, 0);
-</code></pre>
+
+});</code></pre>
         </article>
     </section>
 
@@ -1695,13 +1787,13 @@ setTimeout(() => {
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Drawable.html">Drawable</a></li><li><a href="RealTypeBox.html">RealTypeBox</a></li><li><a href="Sprite.html">Sprite</a></li><li><a href="Text.html">Text</a></li></ul><h3>Global</h3><ul><li><a href="global.html#LibraryLoopMGB">LibraryLoopMGB</a></li><li><a href="global.html#_copyProps">_copyProps</a></li><li><a href="global.html#_removeFromArray">_removeFromArray</a></li><li><a href="global.html#_soundCache">_soundCache</a></li><li><a href="global.html#autoGenerateHitbox">autoGenerateHitbox</a></li><li><a href="global.html#backgroundImg">backgroundImg</a></li><li><a href="global.html#canvaX">canvaX</a></li><li><a href="global.html#canvaY">canvaY</a></li><li><a href="global.html#canvasEl">canvasEl</a></li><li><a href="global.html#convexHull">convexHull</a></li><li><a href="global.html#createSprite">createSprite</a></li><li><a href="global.html#createText">createText</a></li><li><a href="global.html#createTypeBox">createTypeBox</a></li><li><a href="global.html#cross">cross</a></li><li><a href="global.html#ctx">ctx</a></li><li><a href="global.html#cursor">cursor</a></li><li><a href="global.html#debug">debug</a></li><li><a href="global.html#drawables">drawables</a></li><li><a href="global.html#forever">forever</a></li><li><a href="global.html#generateHitboxFromImage">generateHitboxFromImage</a></li><li><a href="global.html#hide">hide</a></li><li><a href="global.html#hoverInfoEl">hoverInfoEl</a></li><li><a href="global.html#keys">keys</a></li><li><a href="global.html#mousePosEl">mousePosEl</a></li><li><a href="global.html#playSound">playSound</a></li><li><a href="global.html#polygonsIntersect">polygonsIntersect</a></li><li><a href="global.html#prevKeys">prevKeys</a></li><li><a href="global.html#repeat">repeat</a></li><li><a href="global.html#setBackground">setBackground</a></li><li><a href="global.html#show">show</a></li><li><a href="global.html#wait">wait</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Drawable.html">Drawable</a></li><li><a href="RealTypeBox.html">RealTypeBox</a></li><li><a href="Sprite.html">Sprite</a></li><li><a href="Text.html">Text</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Sun May 18 2025 04:49:28 GMT+0000 (Coordinated Universal Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Fri May 23 2025 14:51:16 GMT+0000 (Coordinated Universal Time)
 </footer>
 
 <script> prettyPrint(); </script>
